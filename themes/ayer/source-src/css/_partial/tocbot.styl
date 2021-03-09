@@ -1,10 +1,13 @@
 
 .tocbot
+  padding 20px
   position absolute
+  right -28rem
   top 14rem
-  left calc((100vw - 70rem) / 2 + 70rem)
   font-size 80%
-  opacity .8
+  opacity .95
+  max-width 255px
+  border-radius 8px
   > .toc-list
     position relative
     overflow hidden
@@ -35,7 +38,9 @@ a.toc-link
 .is-position-fixed
   position fixed !important
   top 0
-  right aside-width
+  right 6rem
+  background-color #fff
+  z-index 996
 
 // Left line before pseudo element.
 .toc-link::before
